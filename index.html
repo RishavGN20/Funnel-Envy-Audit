@@ -390,7 +390,7 @@
         </div>
         <div class="form_right">
             <h3>Get Your Full Funnel Audit</h3>
-            <form>
+            <form onsubmit="submitForm()">
                 <p>My biggest challenge is</p>
 
                 <div class="input-box">
@@ -518,7 +518,10 @@
             }  
         }
 
-
+function submitForm(){
+    alert("Thank you for your response");
+    window.location.href("/");
+}
 
     </script>
 </body>
