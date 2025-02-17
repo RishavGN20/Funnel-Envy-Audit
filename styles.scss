@@ -11,6 +11,9 @@ body {
     color: $text-w;
     padding: 7px 12px;
     border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 
@@ -45,6 +48,7 @@ body {
 
     p {
         color: $text-w;
+        word-spacing: 3px;
     }
 
     img {
@@ -63,14 +67,17 @@ body {
 
     button {
         background-color: $theme-color;
-        padding: 5px 15px;
+        padding: 5px 23px;
         border-radius: 20px;
+        outline: none;
+        border: none;
+        cursor: pointer;
 
         @media screen and (max-width:991px) {
             padding: 5px 10px;
         }
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:567px) {
             width: 60%;
         }
 
@@ -78,6 +85,7 @@ body {
         a {
             color: $text-w;
             text-decoration: none;
+            cursor: pointer;
         }
     }
 }
@@ -96,7 +104,7 @@ body {
         padding: 6px 10px;
     }
 
-    .logo {
+    .navbar_logo {
 
         @media screen and (max-width:991px) {
             width: 130px;
@@ -107,7 +115,7 @@ body {
         }
     }
 
-    .nav-menu {
+    .navbar_menu {
 
         display: flex;
         align-items: center;
@@ -126,11 +134,12 @@ body {
             li {
                 a {
                     color: black;
+                    cursor: pointer;
                 }
             }
         }
 
-        .hamburger {
+        .navbar_hamburger {
             margin: 0px 10px;
             display: none;
 
@@ -166,6 +175,7 @@ body {
                     line-height: 40px;
                     letter-spacing: 1px;
                     text-align: center;
+                    cursor: pointer;
 
                     @media screen and (max-width:991px) {
                         font-size: 13px;
@@ -176,6 +186,13 @@ body {
 
         button {
             @include button-style;
+
+            a {
+                font-weight: lighter;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+            }
+
         }
 
     }
@@ -625,10 +642,11 @@ body {
 
     @media screen and (max-width:991px) {
         padding: 100px 50px;
+        flex-direction: column;
     }
 
     @media screen and (max-width:767px) {
-        flex-direction: column;
+
         padding: 80px 35px;
     }
 
@@ -636,7 +654,7 @@ body {
     .founders_img {
         width: 50%;
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:991px) {
             width: 100%;
         }
 
@@ -654,13 +672,9 @@ body {
 
         @media screen and (max-width:991px) {
             gap: 14px;
-            width: 50%;
-        }
-
-        @media screen and (max-width:767px) {
-
             width: 100%;
         }
+
 
         img {
             max-width: 64px;
@@ -972,6 +986,7 @@ body {
             padding: 12px 24px;
             border: 2px solid #8BD0EE;
             border-radius: 50px;
+            cursor: pointer;
         }
     }
 }
@@ -1060,7 +1075,7 @@ body {
 
             img {
                 padding-left: 21px;
-               
+
                 border-left: 1px solid #35AADB;
 
                 @media screen and (max-width:767px) {
@@ -1224,6 +1239,7 @@ body {
                 margin-top: 15px;
                 padding: 14px 12px;
                 border-radius: 15px;
+                cursor: pointer;
             }
         }
     }
@@ -1308,7 +1324,7 @@ body {
                         font-size: 14px;
                         line-height: 25.2px;
                         letter-spacing: 1px;
-
+                        cursor: pointer;
                     }
                 }
             }
@@ -1348,7 +1364,7 @@ footer {
     color: #515151;
     gap: 5px;
 
-    @media screen and (max-width:1191px){
+    @media screen and (max-width:1191px) {
         padding: 36px 30px;
     }
 }

@@ -34,6 +34,7 @@ body {
 }
 .header p {
   color: #fff;
+  word-spacing: 3px;
 }
 .header img {
   position: absolute;
@@ -52,15 +53,18 @@ body {
 }
 .header button {
   background-color: #113F60;
-  padding: 5px 15px;
+  padding: 5px 23px;
   border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 991px) {
   .header button {
     padding: 5px 10px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 567px) {
   .header button {
     width: 60%;
   }
@@ -68,6 +72,7 @@ body {
 .header button a {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .navbar {
@@ -86,18 +91,18 @@ body {
   }
 }
 @media screen and (max-width: 991px) {
-  .navbar .logo {
+  .navbar .navbar_logo {
     width: 130px;
   }
 }
-.navbar .logo img {
+.navbar .navbar_logo img {
   max-width: 100%;
 }
-.navbar .nav-menu {
+.navbar .navbar_menu {
   display: flex;
   align-items: center;
 }
-.navbar .nav-menu .newstyle {
+.navbar .navbar_menu .newstyle {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -108,39 +113,40 @@ body {
   width: 100%;
   transition: all 2s ease;
 }
-.navbar .nav-menu .newstyle li a {
+.navbar .navbar_menu .newstyle li a {
   color: black;
+  cursor: pointer;
 }
-.navbar .nav-menu .hamburger {
+.navbar .navbar_menu .navbar_hamburger {
   margin: 0px 10px;
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .navbar .nav-menu .hamburger {
+  .navbar .navbar_menu .navbar_hamburger {
     display: block;
   }
 }
-.navbar .nav-menu .hamburger img {
+.navbar .navbar_menu .navbar_hamburger img {
   width: 100%;
 }
-.navbar .nav-menu ul {
+.navbar .navbar_menu ul {
   display: flex;
   list-style: none;
 }
 @media screen and (max-width: 767px) {
-  .navbar .nav-menu ul {
+  .navbar .navbar_menu ul {
     display: none;
   }
 }
-.navbar .nav-menu ul li {
+.navbar .navbar_menu ul li {
   padding: 0px 16px;
 }
 @media screen and (max-width: 991px) {
-  .navbar .nav-menu ul li {
+  .navbar .navbar_menu ul li {
     padding: 0px 8px;
   }
 }
-.navbar .nav-menu ul li a {
+.navbar .navbar_menu ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
@@ -148,17 +154,26 @@ body {
   line-height: 40px;
   letter-spacing: 1px;
   text-align: center;
+  cursor: pointer;
 }
 @media screen and (max-width: 991px) {
-  .navbar .nav-menu ul li a {
+  .navbar .navbar_menu ul li a {
     font-size: 13px;
   }
 }
-.navbar .nav-menu button {
+.navbar .navbar_menu button {
   background-color: #DF803F;
   color: #fff;
   padding: 7px 12px;
   border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.navbar .navbar_menu button a {
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  cursor: pointer;
 }
 
 .main-section {
@@ -226,6 +241,9 @@ body {
   color: #fff;
   padding: 7px 12px;
   border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
   width: 38%;
   margin-top: 22px;
 }
@@ -587,18 +605,18 @@ body {
 @media screen and (max-width: 991px) {
   .founders {
     padding: 100px 50px;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 767px) {
   .founders {
-    flex-direction: column;
     padding: 80px 35px;
   }
 }
 .founders .founders_img {
   width: 50%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .founders .founders_img {
     width: 100%;
   }
@@ -615,11 +633,6 @@ body {
 @media screen and (max-width: 991px) {
   .founders .founders__content {
     gap: 14px;
-    width: 50%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .founders .founders__content {
     width: 100%;
   }
 }
@@ -793,6 +806,9 @@ body {
   color: #fff;
   padding: 7px 12px;
   border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
   padding: 12px 12px;
   border-radius: 40px;
   margin-top: 24px;
@@ -915,6 +931,7 @@ body {
   padding: 12px 24px;
   border: 2px solid #8BD0EE;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .tilted {
@@ -1147,6 +1164,7 @@ body {
   margin-top: 15px;
   padding: 14px 12px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .bottom {
@@ -1226,6 +1244,7 @@ body {
   font-size: 14px;
   line-height: 25.2px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 .bottom img {
   padding: 35px 0px;
