@@ -25,7 +25,7 @@
             </div>
 
             <div class="nav-menu">
-                <ul>
+                <ul id="menu">
                     <li><a>Why FunnelEnvy</a></li>
                     <li><a>About Us</a></li>
                     <li><a>Services</a></li>
@@ -34,7 +34,7 @@
                 </ul>
 
                 <div class="hamburger">
-                    <img src="./images/hamburger.svg">
+                    <img onclick="showMenu()" src="./images/hamburger.svg">
                 </div>
                 <button><a>Contact Us</a></button>
             </div>
@@ -450,7 +450,7 @@
                 </ul>
             </div>
 
-            <div class="bottom_list">
+            <div class="bottom_list ml">
                 <h3>Resources</h3>
                 <ul>
                     <li><a href="#">Resources</a></li>
@@ -458,11 +458,11 @@
                 </ul>
             </div>
 
-            <div class="bottom_list">
+            <div class="bottom_list ml">
                 <h3>follow us on</h3>
             </div>
 
-            <div class="sociallogos">
+            <div class="sociallogo ml">
                 <a><img src="./images/facebook.svg" alt="facebook-icon"></a>
                 <a><img src="./images/twitter.svg" alt="twitter-icon"></a>
                 <a><img src="./images/linkedin.svg" alt="linkedin-icon"></a>
@@ -504,6 +504,21 @@
                 });
             });
         });
+
+
+        let menu = document.getElementById("menu");
+        function showMenu() {
+            if (menu.classList.contains("newstyle")) {
+                menu.classList.remove("newstyle");
+                document.getElementsByClassName("main-section")[0].style.paddingTop="80px";
+            }
+            else{
+                menu.classList.add("newstyle");
+                document.getElementsByClassName("main-section")[0].style.paddingTop="230px";
+            }  
+        }
+
+        //        padding: 230px 40px;
 
 
     </script>
