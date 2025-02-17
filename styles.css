@@ -18,6 +18,20 @@ body {
   position: relative;
   width: 100%;
 }
+@media screen and (max-width: 991px) {
+  .header {
+    gap: 13px;
+    justify-content: flex-start;
+    padding: 10px 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 10px 5px;
+    gap: 8px;
+    padding-right: 35px;
+  }
+}
 .header p {
   color: #fff;
 }
@@ -26,10 +40,25 @@ body {
   right: 20px;
   top: 17px;
 }
+@media screen and (max-width: 991px) {
+  .header img {
+    right: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header img {
+    right: 10px;
+  }
+}
 .header button {
   background-color: #113F60;
   padding: 5px 15px;
   border-radius: 20px;
+}
+@media screen and (max-width: 991px) {
+  .header button {
+    padding: 5px 10px;
+  }
 }
 .header button a {
   color: #fff;
@@ -39,8 +68,21 @@ body {
 .navbar {
   background-color: #113F60;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  padding: 6px 0px;
+}
+@media screen and (max-width: 767px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 6px 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar .logo {
+    width: 130px;
+  }
 }
 .navbar .logo img {
   max-width: 100%;
@@ -53,6 +95,11 @@ body {
   margin: 0px 10px;
   display: none;
 }
+@media screen and (max-width: 767px) {
+  .navbar .nav-menu .hamburger {
+    display: block;
+  }
+}
 .navbar .nav-menu .hamburger img {
   width: 100%;
 }
@@ -60,12 +107,17 @@ body {
   display: flex;
   list-style: none;
 }
+@media screen and (max-width: 767px) {
+  .navbar .nav-menu ul {
+    display: none;
+  }
+}
 .navbar .nav-menu ul li {
   padding: 0px 16px;
 }
 @media screen and (max-width: 991px) {
   .navbar .nav-menu ul li {
-    padding: 0px 10px;
+    padding: 0px 8px;
   }
 }
 .navbar .nav-menu ul li a {
@@ -76,6 +128,11 @@ body {
   line-height: 40px;
   letter-spacing: 1px;
   text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .navbar .nav-menu ul li a {
+    font-size: 13px;
+  }
 }
 .navbar .nav-menu button {
   background-color: #DF803F;
@@ -88,18 +145,40 @@ body {
   padding: 80px 64px;
   background-color: #E3F1FB;
 }
+@media screen and (max-width: 1191px) {
+  .main-section {
+    padding: 80px 40px;
+  }
+}
 .main-section .card {
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 991px) {
+  .main-section .card {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+}
 .main-section .card .picture {
   width: 50%;
+}
+@media screen and (max-width: 991px) {
+  .main-section .card .picture {
+    width: 100%;
+  }
 }
 .main-section .card .picture img {
   width: 100%;
   height: 100%;
   border-top-right-radius: 33px;
   border-bottom-right-radius: 33px;
+}
+@media screen and (max-width: 991px) {
+  .main-section .card .picture img {
+    border-radius: 33px;
+  }
 }
 .main-section .card .content {
   background-color: #113F60;
@@ -110,6 +189,18 @@ body {
   border-top-left-radius: 33px;
   border-bottom-left-radius: 33px;
 }
+@media screen and (max-width: 1191px) {
+  .main-section .card .content {
+    padding: 35px 23px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main-section .card .content {
+    border-radius: 33px;
+    padding: 35px 23px;
+    width: 100%;
+  }
+}
 .main-section .card .content button {
   background-color: #DF803F;
   color: #fff;
@@ -118,12 +209,28 @@ body {
   width: 38%;
   margin-top: 22px;
 }
+@media screen and (max-width: 1191px) {
+  .main-section .card .content button {
+    width: 34%;
+    margin-top: 18px;
+  }
+}
 .main-section .card .content .first-item {
   display: flex;
   gap: 10px;
 }
+@media screen and (max-width: 1191px) {
+  .main-section .card .content .first-item {
+    gap: 7px;
+  }
+}
 .main-section .card .content .first-item p {
   margin: 10px 0px;
+}
+@media screen and (max-width: 1191px) {
+  .main-section .card .content .first-item p {
+    margin: 7px 0px;
+  }
 }
 .main-section .card .content p {
   font-weight: 400;
@@ -131,6 +238,14 @@ body {
   line-height: 27px;
   color: #fff;
   margin: 24px 0px;
+}
+@media screen and (max-width: 1191px) {
+  .main-section .card .content p {
+    font-size: 17px;
+    line-height: 26px;
+    color: #fff;
+    margin: 19px 0px;
+  }
 }
 .main-section .card .content .blue {
   color: #8BD0EE;
@@ -142,6 +257,12 @@ body {
   letter-spacing: 0%;
   color: #fff;
   display: inline;
+}
+@media screen and (max-width: 1191px) {
+  .main-section .card .content h1 {
+    font-size: 48px;
+    line-height: 50.2px;
+  }
 }
 
 .sponsorships {
@@ -188,6 +309,13 @@ body {
   background-color: #E3F1FB;
   padding: 112px 64px;
 }
+@media screen and (max-width: 991px) {
+  .features {
+    flex-direction: column;
+    gap: 60px;
+    padding: 90px 50px;
+  }
+}
 .features .features__heading {
   padding-right: 20px;
 }
@@ -196,6 +324,12 @@ body {
   font-size: 48px;
   line-height: 57.6px;
   letter-spacing: 0%;
+}
+@media screen and (max-width: 767px) {
+  .features .features__heading h2 {
+    font-size: 46px;
+    line-height: 52.6px;
+  }
 }
 .features .features__card {
   display: flex;
@@ -246,6 +380,11 @@ body {
     gap: 35px;
   }
 }
+@media screen and (max-width: 991px) {
+  .main-cards .first-row {
+    flex-direction: column;
+  }
+}
 .main-cards .first-row .business {
   display: flex;
   flex-direction: column;
@@ -265,6 +404,11 @@ body {
 @media screen and (max-width: 1191px) {
   .main-cards .first-row .business .img-content {
     padding: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-cards .first-row .business .img-content {
+    padding: 20px 15px;
   }
 }
 .main-cards .first-row .business .img-content::before {
@@ -338,8 +482,29 @@ body {
 .founders {
   display: flex;
   padding: 112px 64px;
-  gap: 60px;
+  gap: 50px;
   align-items: center;
+}
+@media screen and (max-width: 991px) {
+  .founders {
+    padding: 112px 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .founders {
+    flex-direction: column;
+  }
+}
+.founders .founders_img {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .founders .founders_img {
+    width: 100%;
+  }
+}
+.founders .founders_img img {
+  width: 100%;
 }
 .founders .founders__content {
   display: flex;
@@ -347,12 +512,16 @@ body {
   gap: 24px;
   width: 48%;
 }
-.founders .founders__content .founders_img {
-  width: 48%;
+@media screen and (max-width: 991px) {
+  .founders .founders__content {
+    gap: 14px;
+    width: 50%;
+  }
 }
-.founders .founders__content .founders_img img {
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 767px) {
+  .founders .founders__content {
+    width: 100%;
+  }
 }
 .founders .founders__content img {
   max-width: 64px;
@@ -380,10 +549,20 @@ body {
 }
 
 .expenses {
-  padding: 112px 64px 112px 64px;
+  padding: 112px 64px;
   display: flex;
   gap: 24px;
   align-items: baseline;
+}
+@media screen and (max-width: 1191px) {
+  .expenses {
+    padding: 112px 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .expenses {
+    flex-direction: column;
+  }
 }
 .expenses .expenses_content {
   border: 2px solid #E3F1FB;
@@ -391,6 +570,17 @@ body {
   display: flex;
   flex-direction: column;
   padding: 32px;
+  width: 50%;
+}
+@media screen and (max-width: 1191px) {
+  .expenses .expenses_content {
+    padding: 23px 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .expenses .expenses_content {
+    width: 100%;
+  }
 }
 .expenses .expenses_content .paragraph {
   display: flex;
@@ -398,6 +588,13 @@ body {
   gap: 16px;
   margin-top: 20px;
   margin-bottom: 35px;
+}
+@media screen and (max-width: 991px) {
+  .expenses .expenses_content .paragraph {
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 }
 .expenses .expenses_content h4 {
   font-weight: 700;
@@ -416,13 +613,19 @@ body {
 .expenses .expenses_content .price {
   display: flex;
   gap: 13px;
-  align-items: self-end;
+  align-items: center;
 }
 .expenses .expenses_content .price h2 {
   font-weight: 700;
   font-size: 56px;
   line-height: 67.2px;
   color: #666666;
+}
+@media screen and (max-width: 991px) {
+  .expenses .expenses_content .price h2 {
+    font-size: 51px;
+    line-height: 50.2px;
+  }
 }
 .expenses .expenses_content .price p {
   font-weight: 700;
@@ -439,6 +642,16 @@ body {
   gap: 16px;
   width: 50%;
   box-shadow: 0px 0px 7px 0px rgb(227, 84, 84);
+}
+@media screen and (max-width: 1191px) {
+  .expenses .expenses_card {
+    padding: 23px 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .expenses .expenses_card {
+    width: 100%;
+  }
 }
 .expenses .expenses_card button {
   background-color: #DF803F;
@@ -465,7 +678,7 @@ body {
 .expenses .expenses_card .price {
   display: flex;
   gap: 10px;
-  align-items: self-end;
+  align-items: center;
 }
 .expenses .expenses_card .price h2 {
   font-weight: 700;
@@ -474,12 +687,23 @@ body {
   letter-spacing: 0%;
   color: #fff;
 }
+@media screen and (max-width: 991px) {
+  .expenses .expenses_card .price h2 {
+    font-size: 52px;
+  }
+}
 .expenses .expenses_card .price p {
   color: #fff;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 32px;
   line-height: 41.6px;
+}
+@media screen and (max-width: 991px) {
+  .expenses .expenses_card .price p {
+    font-size: 29px;
+    line-height: 33.6px;
+  }
 }
 
 .text-content {
@@ -599,6 +823,17 @@ body {
   display: flex;
   position: relative;
 }
+@media screen and (max-width: 1191px) {
+  .form {
+    padding: 100px 35px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .form {
+    padding: 100px 35px;
+    flex-direction: column;
+  }
+}
 .form::before {
   left: 0;
   content: "";
@@ -617,6 +852,11 @@ body {
   flex-direction: column;
   gap: 24px;
   padding: 32px 48px 32px 32px;
+}
+@media screen and (max-width: 1191px) {
+  .form .form_left {
+    padding: 32px 25px 32px 25px;
+  }
 }
 .form .form_left h2 {
   font-weight: 700;
@@ -649,6 +889,12 @@ body {
   width: 83%;
   padding: 32px;
   border-radius: 20px;
+}
+@media screen and (max-width: 1191px) {
+  .form .form_right {
+    width: 100%;
+    padding: 32px 16px;
+  }
 }
 .form .form_right form {
   display: flex;
@@ -693,6 +939,11 @@ body {
 .bottom {
   padding: 0px 64px;
   background-color: #104A69;
+}
+@media screen and (max-width: 1191px) {
+  .bottom {
+    padding: 0px 35px;
+  }
 }
 .bottom .bottom_banner {
   display: flex;
