@@ -17,7 +17,7 @@
         <div class="header">
             <p>Maximize Your Full-Funnel Conversions and Increase Revenue in Just 21 Days</p>
             <button> <a href="#">Get Your Audit</a></button>
-            <img src="./images/Vector.svg" alt="close-icon">
+            <img src="./images/Vector.svg" onclick="hide()" alt="close-icon">
         </div>
         <nav class="navbar">
             <div class="navbar_logo">
@@ -450,7 +450,7 @@
                 </ul>
             </div>
 
-            <div class="bottom_list ml">
+            <div class="bottom_list">
                 <h3>Resources</h3>
                 <ul>
                     <li><a href="#">Resources</a></li>
@@ -458,15 +458,16 @@
                 </ul>
             </div>
 
-            <div class="bottom_list ml">
+            <div class="bottom_list">
                 <h3>follow us on</h3>
+                <div class="sociallogo">
+                    <a><img src="./images/facebook.svg" alt="facebook-icon"></a>
+                    <a><img src="./images/twitter.svg" alt="twitter-icon"></a>
+                    <a><img src="./images/linkedin.svg" alt="linkedin-icon"></a>
+                </div>
             </div>
 
-            <div class="sociallogo ml">
-                <a><img src="./images/facebook.svg" alt="facebook-icon"></a>
-                <a><img src="./images/twitter.svg" alt="twitter-icon"></a>
-                <a><img src="./images/linkedin.svg" alt="linkedin-icon"></a>
-            </div>
+
 
         </div>
 
@@ -482,8 +483,7 @@
 
 
     <footer>
-        <p>© 2024 Celerius Group, Inc. All rights</p>
-        <p>reserved.</p>
+        <p>© 2024 Celerius Group, Inc. All rights reserved.</p>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -510,18 +510,22 @@
         function showMenu() {
             if (menu.classList.contains("newstyle")) {
                 menu.classList.remove("newstyle");
-                document.getElementsByClassName("main-section")[0].style.paddingTop="80px";
+                document.getElementsByClassName("main-section")[0].style.paddingTop = "80px";
             }
-            else{
+            else {
                 menu.classList.add("newstyle");
-                document.getElementsByClassName("main-section")[0].style.paddingTop="230px";
-            }  
+                document.getElementsByClassName("main-section")[0].style.paddingTop = "230px";
+            }
         }
 
-function submitForm(){
-    alert("Thank you for your response");
-    window.location.href("/");
-}
+        function submitForm() {
+            alert("Thank you for your response");
+            window.location.href("/");
+        }
+
+        function hide(){
+         document.getElementsByClassName("header")[0].style.display="none";
+        }
 
     </script>
 </body>

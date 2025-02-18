@@ -20,9 +20,10 @@ body {
 }
 @media screen and (max-width: 991px) {
   .header {
-    gap: 13px;
+    gap: 11px;
     justify-content: flex-start;
     padding: 10px 5px;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 767px) {
@@ -39,14 +40,10 @@ body {
 .header img {
   position: absolute;
   right: 20px;
-  top: 17px;
+  top: 21px;
+  cursor: pointer;
 }
 @media screen and (max-width: 991px) {
-  .header img {
-    right: 12px;
-  }
-}
-@media screen and (max-width: 767px) {
   .header img {
     right: 10px;
   }
@@ -62,17 +59,31 @@ body {
 @media screen and (max-width: 991px) {
   .header button {
     padding: 5px 10px;
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 567px) {
   .header button {
-    width: 60%;
+    width: 30%;
+    padding: 5px 4px;
   }
 }
 .header button a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25.2px;
+  letter-spacing: 1px;
+  text-align: center;
   color: #fff;
   text-decoration: none;
-  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .header button a {
+    font-size: 13px;
+    line-height: 21.2px;
+    letter-spacing: 0px;
+    font-weight: 400;
+  }
 }
 
 .navbar {
@@ -309,8 +320,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .main-section .card .content h1 {
-    font-size: 41px;
-    line-height: 45.2px;
+    font-size: 33px;
+    line-height: 40.2px;
   }
 }
 
@@ -363,8 +374,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .heading-banner h2 {
-    font-size: 38px;
-    line-height: 46.6px;
+    font-size: 30px;
+    line-height: 36.6px;
   }
 }
 
@@ -407,8 +418,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .features .features__heading h2 {
-    font-size: 42px;
-    line-height: 48.6px;
+    font-size: 35px;
+    line-height: 41.6px;
   }
 }
 .features .features__card {
@@ -516,7 +527,7 @@ body {
 .main-cards .first-row .business .img-content p {
   color: #fff;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
 }
 .main-cards .first-row .business .img-content h3 {
@@ -533,8 +544,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .main-cards .first-row .business .img-content h3 {
-    font-size: 26px;
-    line-height: 33.6px;
+    font-size: 21px;
+    line-height: 31.6px;
   }
 }
 
@@ -591,8 +602,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .secondvideo h2 {
-    font-size: 43px;
-    line-height: 50.6px;
+    font-size: 35px;
+    line-height: 43.6px;
   }
 }
 
@@ -659,6 +670,11 @@ body {
     padding: 100px 50px 0px 50px;
   }
 }
+@media screen and (max-width: 991px) {
+  .alone-heading {
+    padding: 50px 40px 0px 40px;
+  }
+}
 .alone-heading h2 {
   font-weight: 700;
   font-size: 48px;
@@ -672,8 +688,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .alone-heading h2 {
-    font-size: 46px;
-    line-height: 53.6px;
+    font-size: 37px;
+    line-height: 46.6px;
   }
 }
 
@@ -765,8 +781,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .expenses .expenses_content .price h2 {
-    font-size: 43px;
-    line-height: 40.2px;
+    font-size: 40px;
+    line-height: 37.2px;
   }
 }
 .expenses .expenses_content .price p {
@@ -843,6 +859,11 @@ body {
     font-size: 52px;
   }
 }
+@media screen and (max-width: 767px) {
+  .expenses .expenses_card .price h2 {
+    font-size: 36px;
+  }
+}
 .expenses .expenses_card .price p {
   color: #fff;
   font-family: Montserrat;
@@ -856,6 +877,12 @@ body {
     line-height: 33.6px;
   }
 }
+@media screen and (max-width: 767px) {
+  .expenses .expenses_card .price p {
+    font-size: 25px;
+    line-height: 27.6px;
+  }
+}
 
 .text-content {
   padding: 112px 64px;
@@ -867,11 +894,16 @@ body {
 }
 @media screen and (max-width: 767px) {
   .text-content {
-    padding: 50px 30px;
+    padding: 50px 22px;
   }
 }
 .text-content .faq-content {
   margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .text-content .faq-content {
+    margin-bottom: 27px;
+  }
 }
 .text-content h2 {
   color: #444444;
@@ -879,6 +911,13 @@ body {
   font-size: 48px;
   line-height: 57.6px;
   margin-bottom: 24px;
+}
+@media screen and (max-width: 767px) {
+  .text-content h2 {
+    font-size: 41px;
+    line-height: 35.6px;
+    margin-bottom: 19px;
+  }
 }
 .text-content .extra-border {
   border-bottom: 1px solid #AAAAAA;
@@ -994,8 +1033,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .tilted .tilted_card p {
-    font-size: 23px;
-    line-height: 31.6px;
+    font-size: 21px;
+    line-height: 29.6px;
   }
 }
 .tilted .tilted_card .tilted_founder {
@@ -1092,6 +1131,12 @@ body {
   font-weight: 700;
   font-size: 48px;
   line-height: 57.6px;
+}
+@media screen and (max-width: 767px) {
+  .form .form_left h2 {
+    font-size: 36px;
+    line-height: 45.6px;
+  }
 }
 .form .form_left span {
   color: #666666;
@@ -1200,28 +1245,13 @@ body {
     gap: 40px;
   }
 }
-.bottom .bottom_banner .sociallogos {
-  display: flex;
-  gap: 0px;
-  margin-top: 50px;
-}
-@media screen and (max-width: 767px) {
-  .bottom .bottom_banner .sociallogos {
-    margin-top: -20px;
-  }
-}
-.bottom .bottom_banner .sociallogos img {
-  width: 100%;
-}
-@media screen and (max-width: 767px) {
-  .bottom .bottom_banner .ml {
-    margin-left: -40px;
-  }
-}
 .bottom .bottom_banner .bottom_list {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.bottom .bottom_banner .bottom_list .sociallogo a img {
+  padding: 10px 0px;
 }
 .bottom .bottom_banner .bottom_list h3 {
   color: #fff;
@@ -1278,6 +1308,11 @@ footer {
 @media screen and (max-width: 1191px) {
   footer {
     padding: 36px 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 36px 12px;
   }
 }
 
