@@ -33,12 +33,19 @@ body {
     padding: 10px 0px;
     position: relative;
     width: 100%;
+    opacity: 1;
+    height: 59px;
+    overflow: hidden;
+    transition: height 1s ease;
+
+   
 
     @media screen and (max-width:991px) {
         gap: 11px;
         justify-content: flex-start;
         padding: 10px 5px;
         flex-wrap: wrap;
+        height: auto;
     }
 
     @media screen and (max-width:767px) {
@@ -101,6 +108,11 @@ body {
             }
         }
     }
+}
+
+.hide{
+    height: 0;
+    padding: 0;
 }
 
 .navbar {

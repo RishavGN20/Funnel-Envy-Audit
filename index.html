@@ -524,7 +524,10 @@
         }
 
         function hide(){
-         document.getElementsByClassName("header")[0].style.display="none";
+         
+         let header=document.querySelector(".header");
+         header.classList.add("hide");
+        
         }
 
     </script>
