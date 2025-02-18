@@ -38,7 +38,7 @@ body {
     overflow: hidden;
     transition: height 1s ease;
 
-   
+
 
     @media screen and (max-width:991px) {
         gap: 11px;
@@ -110,7 +110,7 @@ body {
     }
 }
 
-.hide{
+.hide {
     height: 0;
     padding: 0;
 }
@@ -1339,13 +1339,14 @@ body {
             gap: 15px;
 
 
-            .sociallogo{
-                a{
-                    img{
+            .sociallogo {
+                a {
+                    img {
                         padding: 10px 0px;
                     }
                 }
             }
+
             h3 {
                 color: $text-w;
             }
@@ -1408,11 +1409,19 @@ footer {
     color: #515151;
     gap: 5px;
 
+    p {
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28.8px;
+        letter-spacing: 1px;
+    }
+
     @media screen and (max-width:1191px) {
         padding: 36px 30px;
     }
 
-    @media screen and (max-width:767px){
+    @media screen and (max-width:767px) {
         padding: 36px 12px;
     }
 }
